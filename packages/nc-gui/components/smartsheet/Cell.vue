@@ -203,7 +203,7 @@ onUnmounted(() => {
         'nc-grid-numeric-cell-right': isGrid && isNumericField && !isEditColumnMenu && !isForm && !isExpandedFormOpen,
         'h-10': isForm && !isSurveyForm && !isAttachment(column) && !props.virtual,
         'nc-grid-numeric-cell-left': (isForm && isNumericField && isExpandedFormOpen) || isEditColumnMenu,
-        '!min-h-30 resize-y': isTextArea(column) && (isForm || isSurveyForm),
+        '!min-h-30': isTextArea(column) && (isForm || isSurveyForm),
       },
     ]"
     @keydown.enter.exact="navigate(NavigateDir.NEXT, $event)"
